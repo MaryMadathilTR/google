@@ -47,6 +47,7 @@ public class GoogleTest {
 
   @Test
   public void userCanSearch() {
+    //Navigate to url
     driver.get("https://www.duckduckgo.com");
     GooglePage page = PageFactory.initElements(driver, GooglePage.class);
     SearchResultsPage results = page.searchFor("Selenide java");
